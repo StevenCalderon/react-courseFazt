@@ -5,18 +5,8 @@ const rootElement = document.getElementById("root"); // obtengo el elemento "id:
 const root = ReactDOM.createRoot(rootElement); // Es un elemento que React lo usa bastante es el elemento raiz
 
 function Greeting() {
-  return (
-    <div>
-      <h1> Post </h1>
-      <p>
-        Lentejas ballenas brooklyn por las mudas queman quedo celeste, con por
-        que diana el llanura pulso de, de arroyo pisan de los arcos amor. Por
-        tierra bajaba pies celeste para tierra de nino, pero tránsito me atrás
-        celeste imperturbable la quedo poniendo carcajadas, apariencia al se los
-        la la llenando.
-      </p>
-    </div>
-  );
+  const married = false;
+  return <h1>{married ? "Estoy casado 😒" : "No estoy casado 😅"}</h1>;
 }
 
 root.render(
