@@ -10,6 +10,7 @@ const root = ReactDOM.createRoot(rootElement); // Es un elemento que React lo us
 
 root.render(
   <div>
+    <Button text={"Hola Mundo"} category="Accion"/>
     <TaskCard ready={true}/>
     <TaskCard ready={false}/>
   </div>

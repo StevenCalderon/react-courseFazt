@@ -1,9 +1,14 @@
 import PropTypes from "prop-types";
 //Primera  forma de poner por defecto un valor a una variable
+
 export function Button({ text, category = "Uncategorized" }) {
   if (!text) console.error("El texto es requerido");
   return (
-    <button>
+    <button
+      onClick={() => {
+        alert(`${text} - ${category}`);
+      }}
+    >
       {text} - {category}
     </button>
   );
