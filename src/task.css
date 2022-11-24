@@ -3,3 +3,12 @@
   color: aquamarine;
   padding: 15px;
 }
+
+.emojiFeliz {
+  background-color: #ffffff;
+  padding: 5px;
+}
+.emojiTriste {
+  background-color: #ae5fa8;
+  padding: 5px;
+}
