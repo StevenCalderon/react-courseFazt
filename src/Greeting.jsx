@@ -1,5 +1,6 @@
-export function Greeting() {
-  return <h1>Bienvenido a este componente H1</h1>;
+export function Greeting({title=" Hola ",name="Anonimo"}) {
+  console.log(name)
+  return <h1>{title}, dice {name}</h1>;
 }
 
 export function Goodbye() {
