@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import ReactDOM from "react-dom/client"; //Necesito react dom desde lado del cliente.
 
 const rootElement = document.getElementById("root"); // obtengo el elemento "id:root" del index.html
@@ -7,6 +7,11 @@ const root = ReactDOM.createRoot(rootElement); // Es un elemento que React lo us
 function Counter() {
   const [counter, setCounter] = useState(0);
   const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    console.log("render");
+  }, [counter]);
+
   return (
     <>
       <h1>Counter: {counter}</h1>
@@ -33,7 +38,7 @@ function Counter() {
       >
         Resetear
       </button>
-
+      <hr></hr>
       <input
         onChange={(event) => {
           setMessage(event.target.value);
